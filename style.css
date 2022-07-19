@@ -1,0 +1,150 @@
+body,
+header,
+nav {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+img {
+  max-width: 50%;
+  min-width: 545px;
+  height: auto;
+  padding-left: 40px;
+  border-radius: 10px;
+}
+
+.header-bg {
+  background: rgb(0, 0, 0);
+}
+
+.container {
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.flex li {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  background-color: hsl(217, 54%, 11%);
+}
+
+.flex li:nth-child(2) {
+  background-color: #1d3e32;
+}
+
+.flex li:last-child {
+  background-color: rgb(44, 125, 250);
+}
+
+.flex a {
+  padding: 10px;
+}
+
+.flex a:last-child {
+  color: #fff;
+}
+
+.texto {
+  font-size: 2.5rem;
+  margin-left: 40px;
+  text-transform: uppercase;
+}
+
+.button_1 {
+  display: flex;
+  margin-left: 40px;
+  margin-top: 15px;
+  background: hsl(217, 54%, 11%);
+  border-color: hsl(217, 54%, 11%);
+  border-radius: 3px;
+  max-width: fit-content;
+}
+
+.button_1 a {
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.button_2 {
+  display: flex;
+  margin-left: 40px;
+  margin-top: 15px;
+  background: hsl(30, 38%, 92%);
+  border-radius: 3px;
+  max-width: fit-content;
+  box-shadow: 0px 0px 2px #000;
+}
+
+.button_2 a {
+  color: #000;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.button_3 {
+  display: flex;
+  margin-left: 40px;
+  margin-top: 15px;
+  background: hsl(212, 45%, 89%);
+  border-radius: 3px;
+  max-width: fit-content;
+  box-shadow: 0px 0px 2px #ccc;
+}
+
+.button_3 a {
+  color: #000;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.footer-bg {
+  background: #000;
+  margin-top: 40px;
+  padding: 10px;
+  height: 50px;
+}
+
+.footer-bg p {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  img {
+    min-width: 390px;
+    padding-left: 20px;
+  }
+  .texto {
+    font-size: 1.7rem;
+    margin-left: 20px;
+  }
+  .flex {
+    gap: 10px;
+    padding: 5px;
+  }
+  .button_1,
+  .button_2,
+  .button_3 {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  img {
+    min-width: 320px;
+  }
+}
